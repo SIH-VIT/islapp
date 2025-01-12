@@ -1,7 +1,10 @@
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { ThemeTrigger, DateTime } from "../misc";
+
+import UserBtn from "./UserBtn";
+
 import { cn } from "@/lib";
+import { ThemeTrigger, DateTime } from "../misc";
 
 const Navbar = ({
 	title,
@@ -10,6 +13,8 @@ const Navbar = ({
 	title: string;
 	className?: string;
 }) => {
+	const loggedIn = localStorage.getItem("loggedIn");
+
 	return (
 		<header
 			className={cn(
@@ -17,7 +22,7 @@ const Navbar = ({
 				className
 			)}
 		>
-			<SidebarTrigger className="-ml-1" />
+			{loggedIn === "true" ? <SidebarTrigger className="-ml-1" /> : "ISL"}
 			<Separator orientation="vertical" className="mr-2 h-4 rounded-lg" />
 			<h1>{title}</h1>
 			<div className="ml-auto flex items-center gap-4">
@@ -27,6 +32,7 @@ const Navbar = ({
 					className="hidden md:block h-4 rounded-lg"
 				/>
 				<DateTime variant="time" className="hidden md:block" />
+				<UserBtn />
 			</div>
 		</header>
 	);

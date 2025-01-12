@@ -4,10 +4,12 @@ import { AppSidebar } from "./components/blocks";
 import { SidebarProvider } from "./components/ui/sidebar";
 
 export default function Layout() {
+	const loggedIn = localStorage.getItem("loggedIn");
+
 	return (
 		<main>
 			<SidebarProvider>
-				<AppSidebar />
+				{loggedIn === "true" && <AppSidebar />}
 				<Outlet />
 			</SidebarProvider>
 		</main>
