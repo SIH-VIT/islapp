@@ -194,6 +194,7 @@ const Sidebar = React.forwardRef<
 			return (
 				<Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
 					<SheetContent
+						aria-describedby="sidebar"
 						data-sidebar="sidebar"
 						data-mobile="true"
 						className="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
@@ -218,6 +219,7 @@ const Sidebar = React.forwardRef<
 				data-collapsible={state === "collapsed" ? collapsible : ""}
 				data-variant={variant}
 				data-side={side}
+				aria-describedby="sidebar"
 			>
 				{/* This is what handles the sidebar gap on desktop */}
 				<div
@@ -276,7 +278,7 @@ const SidebarTrigger = React.forwardRef<
 			}}
 			{...props}
 		>
-			<PanelLeft className="scale-125"/>
+			<PanelLeft className="scale-125" />
 			<span className="sr-only">Toggle Sidebar</span>
 		</Button>
 	);

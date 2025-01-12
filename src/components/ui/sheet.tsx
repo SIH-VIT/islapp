@@ -120,6 +120,7 @@ const SheetDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Description
     ref={ref}
+    aria-describedby="sidebar"
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
   />
