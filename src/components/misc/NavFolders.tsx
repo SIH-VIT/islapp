@@ -35,7 +35,7 @@ export function NavFolders({
 	return (
 		<SidebarGroup>
 			<SidebarGroupLabel>
-				<Link to="/folders">Folders</Link>
+				<span>Folders</span>
 			</SidebarGroupLabel>
 			<SidebarGroupAction title="Manage Folders">
 				<Frame /> <span className="sr-only">Manage Folders</span>
@@ -54,9 +54,9 @@ export function NavFolders({
 									className="hover:underline hover:bg-transparent active:bg-transparent"
 								>
 									{item.icon && <item.icon />}
-							<Link to={item.url}>
+							<span >
 									<span>{item.title}</span>
-							</Link>
+							</span>
 									<CollapsibleTrigger asChild>
 										<ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90 hover:bg-sidebar-accent rounded-sm" />
 									</CollapsibleTrigger>

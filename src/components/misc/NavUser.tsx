@@ -38,6 +38,7 @@ export function NavUser({
         console.log("Logged Out!")
 		localStorage.setItem("loggedIn", "false");
 		window.location.reload();
+		window.location.href = "/"
 	};
 
 	return (

@@ -15,9 +15,9 @@ import {
 export const data = {
 	versions: ["Personal", "ONE", "Work"],
 	user: {
-		name: "John Doe",
-		email: "john@gmail.com",
-		avatar: "https://api.dicebear.com/9.x/bottts/svg",
+		name: "Tanay",
+		email: "one@gmail.com",
+		avatar: "/assets/user.jpeg",
 	},
 	folders: [
 		{
