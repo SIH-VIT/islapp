@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Dashboard, Dictionary, Folder, Note } from "./pages";
+import { Dashboard, Dictionary, Folder, LandingPage, Note } from "./pages";
 
 import "./index.css";
 import Layout from "./layout";
@@ -11,6 +11,7 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Routes>
+				<Route path="/land" element={<LandingPage />} />
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Dashboard />} />
 					<Route path="trash" element={<Dashboard />} />
