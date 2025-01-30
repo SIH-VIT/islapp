@@ -10,6 +10,7 @@ import {
 	Video,
 	Text,
 	GraduationCap,
+	BookA,
 } from "lucide-react";
 
 export const data = {
@@ -91,11 +92,17 @@ export const data = {
 			color: "text-primary",
 			isActive: true,
 		},
+		// {
+		// 	name: "Learn",
+		// 	url: "/learn",
+		// 	icon: GraduationCap,
+		// 	color: "text-green-500",
+		// },
 		{
-			name: "Learn",
-			url: "/learn",
-			icon: GraduationCap,
-			color: "text-green-500",
+			name:"Dictionary",
+			url:"/dictionary",
+			icon:BookA,
+			color:"text-emerald-500"
 		},
 		{
 			name: "Starred",

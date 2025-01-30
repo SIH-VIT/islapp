@@ -21,6 +21,7 @@ const buttonVariants = cva(
 				link: "text-primary underline-offset-4 hover:underline",
 				tertiary:
 					"bg-primary-foreground text-foreground hover:bg-primary-foreground/50 border border-input",
+				dict: "bg-transparent border border-transparent hover:bg-emerald-500/20 transition transition-colors hover:border-emerald-500",
 			},
 			size: {
 				default: "h-9 px-4 py-2",

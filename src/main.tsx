@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Dashboard, Folder, Note } from "./pages";
+import { Dashboard, Dictionary, Folder, Note } from "./pages";
 
 import "./index.css";
 import Layout from "./layout";
@@ -20,6 +20,10 @@ createRoot(document.getElementById("root")!).render(
 				</Route>
 				<Route path="/note" element={<Layout />}>
 					<Route path=":note" element={<Note />} />
+				</Route>
+				<Route path="/dictionary" element={<Layout />}>
+					<Route index element={<Dictionary />} />
+					<Route path=":word" element={<Note />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
