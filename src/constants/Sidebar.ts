@@ -9,7 +9,7 @@ import {
 	Trash2,
 	Video,
 	Text,
-	GraduationCap,
+	// GraduationCap,
 	BookA,
 } from "lucide-react";
 

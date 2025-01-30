@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib";
 import { Aperture, ChevronDown, Settings2, Video } from "lucide-react";
-import React, { useState } from "react";
+import React from "react";
 
 export default function StreamWebcamCard({
 	className,
@@ -29,7 +29,7 @@ export default function StreamWebcamCard({
 	children?: React.ReactElement;
 	onClick?: React.MouseEventHandler<HTMLDivElement>;
 }) {
-	const [active, setActive] = useState<boolean>(true);
+	// const [active, setActive] = useState<boolean>(true);
 
 	return (
 		<Card className={cn(`col-span-4`, className)} onClick={onClick}>

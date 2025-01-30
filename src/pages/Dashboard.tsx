@@ -2,8 +2,8 @@ import { Navbar } from "@/components/blocks";
 import {
 	StreamWebcamCard,
 	UploadVideoCard,
-	VoiceInputCard,
-	TextInputCard,
+	// VoiceInputCard,
+	// TextInputCard,
 } from "@/components/blocks/Dashboard";
 
 import {

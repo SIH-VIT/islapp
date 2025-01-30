@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import {
     getDayName,
     getFormattedDate,
-    getLocalDateString,
     getDateAndMonth
 } from "@/lib/dateUtils"
 
