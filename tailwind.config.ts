@@ -12,7 +12,11 @@ export default {
     			mono: [
     				'Jetbrains Mono',
     				'monospace'
-    			]
+    			],
+				display:[
+					'Mona Sans',
+					'sans-serif'
+				]
     		},
     		borderRadius: {
     			lg: 'var(--radius)',
