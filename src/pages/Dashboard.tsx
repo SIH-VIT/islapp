@@ -6,16 +6,6 @@ import {
 	TextInputCard,
 } from "@/components/blocks/Dashboard";
 
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import { Paperclip, Video } from "lucide-react";
-
 export default function Dashboard() {
 	return (
 		<div className="w-full flex flex-col items-center relative">
