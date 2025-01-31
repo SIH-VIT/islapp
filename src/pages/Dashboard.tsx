@@ -2,8 +2,8 @@ import { Navbar } from "@/components/blocks";
 import {
 	StreamWebcamCard,
 	UploadVideoCard,
-	// VoiceInputCard,
-	// TextInputCard,
+	VoiceInputCard,
+	TextInputCard,
 } from "@/components/blocks/Dashboard";
 
 import {
@@ -26,9 +26,9 @@ export default function Dashboard() {
 			<div className="grid grid-cols-1 grid-rows-[auto] md:grid-cols-7 max-sm:my-2 max-sm:p-0 p-4 w-full gap-4">
 				<StreamWebcamCard className="col-span-1 md:col-span-4" />
 				<UploadVideoCard className="col-span-1 md:col-span-3" />
-				{/* <VoiceInputCard className="col-span-3" />
-				<TextInputCard className="col-span-4" /> */}
-				<Card className="col-span-1 md:col-span-7">
+				<VoiceInputCard className="col-span-3" />
+				<TextInputCard className="col-span-4" />
+				{/* <Card className="col-span-1 md:col-span-7">
 					<CardHeader>
 						<CardTitle className="text-2xl flex items-center justify-between">
 							Your Transcriptions
@@ -52,7 +52,7 @@ export default function Dashboard() {
 					<CardFooter className="flex flex-col md:flex-row gap-4 -mt-1">
 						
 					</CardFooter>
-				</Card>
+				</Card> */}
 			</div>
 		</div>
 	);
